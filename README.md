@@ -1,2 +1,29 @@
-# laravel-seeder-don-vi-hanh-chinh-viet-nam
-Laravel Seeder - Đơn vị hành chính Việt Nam (Administrative unit of Vietnam)
+# Laravel Seeder - Đơn vị hành chính Việt Nam
+
+## Install
+- Copy `2021_07_30_120000_provinces_table_create.php` into `database/migrations/`
+- Run command `php artisan migrate`
+- Create your own model name `Provinces`
+- Setup `App/Models/Provinces.php`
+```php
+protected $dates = [
+    'created_at', 'updated_at', 'deleted_at'
+];
+
+protected $cast = [
+    'config' => 'json',
+    'status' => 'boolean',
+];
+```
+- Copy `ProvincesTableSeeder.php` into `database/seeders/`
+- Run command `php artisan db:seed --class=ProvincesTableSeeder` (You can view documents at: https://laravel.com/docs/8.x/seeding#running-seeders)
+
+**Provinces Type**
+- 0: National (Quốc gia)
+- 1: Province (Tỉnh/Bang)
+- 2: City (Thành phố)
+- 3: District (Quận/Huyện)
+- 4: Ward (Phường/Xã)
+
+## Contribute
+- We used this seed for our private project so if you want to contribute please contact me at `malayvuong(at)gmail.com`
