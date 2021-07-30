@@ -24,6 +24,7 @@ class ProvincesTableSeeder extends Seeder
           'slug',
           'type',
           'parent_id',
+          'language_id',
           'maps_id',
           'longitude',
           'latitude',
