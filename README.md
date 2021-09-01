@@ -3,8 +3,8 @@
 ## Install
 - Copy `2021_07_30_120000_provinces_table_create.php` into `database/migrations/`
 - Run command `php artisan migrate`
-- Create your own model name `Provinces`
-- Setup `App/Models/Provinces.php`
+- Create your own model name `Province`
+- Setup `App/Models/Province.php`
 ```php
 protected $dates = [
     'created_at', 'updated_at', 'deleted_at'
@@ -15,7 +15,7 @@ protected $cast = [
     'status' => 'boolean',
 ];
 ```
-- Copy `ProvincesTableSeeder.php` into `database/seeders/`
+- Copy `ProvincesTableSeeder.php` and folder `sql` into `database/seeders/`
 - Run command `php artisan db:seed --class=ProvincesTableSeeder` (You can view documents at: https://laravel.com/docs/8.x/seeding#running-seeders)
 
 **Provinces Type**
