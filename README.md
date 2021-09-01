@@ -1,7 +1,7 @@
 # Laravel Seeder - Đơn vị hành chính Việt Nam
 
 ## Install
-- Copy `2021_07_30_120000_provinces_table_create.php` into `database/migrations/`
+- Copy `2021_08_11_062631_create_province_table.php` into `database/migrations/`
 - Run command `php artisan migrate`
 - Create your own model name `Province`
 - Setup `App/Models/Province.php`
